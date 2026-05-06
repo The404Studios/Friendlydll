@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(\"/c/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/MSBuild.exe\" \"C:/Users/wilde/Desktop/Friendlydll/Friendlydll.sln\" -p:Configuration=Release -p:Platform=x64 -m)",
+      "Bash(grep -E \"\\\\.\\(cpp|hpp|h\\)$\")",
+      "PowerShell(& \"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\MSBuild\\\\Current\\\\Bin\\\\MSBuild.exe\" \"C:\\\\Users\\\\wilde\\\\Desktop\\\\Friendlydll\\\\Friendlydll.sln\" /p:Configuration=Release /p:Platform=x86 /m /v:minimal 2>&1)",
+      "PowerShell($f = \"C:\\\\Users\\\\wilde\\\\Desktop\\\\Friendlydll\\\\dependencies\\\\freetype.lib\"; $bytes = [System.IO.File]::ReadAllBytes\\($f\\); $header = [System.Text.Encoding]::ASCII.GetString\\($bytes, 0, [Math]::Min\\(100, $bytes.Length\\)\\); Write-Output \"Size: $\\($bytes.Length\\) bytes\"; Write-Output \"Header: $header\")",
+      "PowerShell(Rename-Item *)",
+      "PowerShell(& \"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\MSBuild\\\\Current\\\\Bin\\\\MSBuild.exe\" \"C:\\\\Users\\\\wilde\\\\Desktop\\\\Friendlydll\\\\Friendlydll.sln\" /p:Configuration=Release /p:Platform=x64 /m /v:minimal 2>&1)",
+      "PowerShell(& \"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\MSBuild\\\\Current\\\\Bin\\\\MSBuild.exe\" \"C:\\\\Users\\\\wilde\\\\Desktop\\\\Friendlydll\\\\Friendlydll.sln\" /p:Configuration=Release /p:Platform=x64 /m /v:minimal 2>&1 | Out-String)",
+      "Bash(\"/c/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/MSBuild.exe\" Friendlydll.sln /p:Configuration=Release /p:Platform=x64 /m /nologo /v:minimal)",
+      "PowerShell(& \"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\MSBuild\\\\Current\\\\Bin\\\\MSBuild.exe\" \"C:\\\\Users\\\\wilde\\\\Desktop\\\\Friendlydll\\\\Friendlydll.sln\" /p:Configuration=Release /p:Platform=x64 /m /nologo /v:minimal 2>&1 | Select-Object -Last 50)",
+      "PowerShell(& \"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\MSBuild\\\\Current\\\\Bin\\\\MSBuild.exe\" \"C:\\\\Users\\\\wilde\\\\Desktop\\\\Friendlydll\\\\Friendlydll.sln\" /p:Configuration=Release /p:Platform=x64 /m /nologo /v:minimal 2>&1 | Select-Object -Last 30)",
+      "Bash(cat build.bat)",
+      "Bash(ls *.sln *.vcxproj)",
+      "Bash(\"/c/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/MSBuild.exe\" Friendlydll.sln /p:Configuration=Release /p:Platform=x64 /m)",
+      "PowerShell(Get-Item *)",
+      "Bash(grep -E \"\\\\.hpp$|\\\\.cpp$|\\\\.lua$\")",
+      "PowerShell(& \"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\MSBuild\\\\Current\\\\Bin\\\\MSBuild.exe\" \"C:\\\\Users\\\\wilde\\\\Desktop\\\\Friendlydll\\\\Friendlydll.sln\" /p:Configuration=Release /p:Platform=x64 /m 2>&1 | Select-Object -Last 40)",
+      "PowerShell(& \"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\MSBuild\\\\Current\\\\Bin\\\\MSBuild.exe\" \"C:\\\\Users\\\\wilde\\\\Desktop\\\\Friendlydll\\\\Friendlydll.sln\" /p:Configuration=Release /p:Platform=x64 /m 2>&1 | Select-Object -Last 30)",
+      "PowerShell(& \"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Community\\\\MSBuild\\\\Current\\\\Bin\\\\MSBuild.exe\" \"C:\\\\Users\\\\wilde\\\\Desktop\\\\Friendlydll\\\\Friendlydll.sln\" /p:Configuration=Release /p:Platform=x64 /m 2>&1 | Select-Object -Last 20)"
+    ]
+  }
+}
